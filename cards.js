@@ -24,7 +24,7 @@ app.post('/cards', (req, res) => {
         value: value
     }
     cards.push(newCard);
-    res.status(201);
+    res.status(201).json(cards);
 });
 
 app.get('/cards/:id', (req, res) => {
